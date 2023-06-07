@@ -7,15 +7,45 @@
         <meta name="description" content="My personal site">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="img/nerd.jpg">
-
         <style>
             body {
                 background-color: #1e2124;
                 height: auto;
                 position: relative;
             }
+            .center_socials {
+                text-align: center;
+                position: relative;
+            }
+            .socials {
+                margin: auto;
+                margin-top: -50px;
+                background-color: rgba(54, 57, 62, 0.5);
+                border-radius: 25px;
+                width: fit-content;
+                height: fit-content;
+                padding: 20px;
+            }
+            .socials p {
+                font-family: Helvetica;
+                font-size: calc(1rem + 1vw);
+                color: white;
+                
+            }
+            .socials img {
+                display: row;
+                object-fit: scale-down;
+                align-items: center;
+                justify-content: center;
+                padding: 5px;
+                width: 100px;
+                height: 100px;
+                max-width: 100px;
+                max-height: 100px;
+            }
             .profile {
-                width: 300px;
+                width: 200px;
+                max-width: 200px;
                 border-radius: 50px;
                 border-style: solid;
                 border-color: white;
@@ -27,9 +57,8 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                font: bold;
                 font-family: Helvetica;
-                font-size: 24px;
+                font-size: calc(1rem + 1vw);
                 color: white;
             }
             .text {
@@ -42,13 +71,26 @@
                 padding: 20px;
             }
 
+
         </style>
     </head>
     <body>
         <div class="contents">
             <img class="profile" src="img/nerd.jpg" alt="caracal with glasses">
             <h1>BuranCodes</h1>
-            <p class="text" alt="intro">Hi! I code primarily in C and Python, but I'm familiar with C++, Rust and Ziglang too :^)</p>
+            <p class="text" alt="intro">Hi, nice to meet you! I code primarily in C and Python, but I'm familiar with C++, Rust and Ziglang too :^)
+                <br>
+                <br>
+                I'm familiar with VS Code, Vim, gcc/++ and gdb as well PowerShell and fish shell.
+            </p>
         </div>
+        <div class="center_socials">
+            <div class="socials">
+                <p>My socials:</p>
+                <a href="https://github.com/BuranCodes"><img src="img/github-mark-white.png" alt="github link" sizes="20px, 20px"></a>
+                <a href="https://twitter.com/BuranCodes"><img src="img/Twitter social icons - circle - blue.png" alt="twitter link" sizes="20px, 20px"></a>
+            </div>
+        </div>
+        
     </body>
 </html>
